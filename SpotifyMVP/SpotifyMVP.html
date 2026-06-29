@@ -70,7 +70,7 @@
 </div>
 
 <script>
-    // Mock Catalog (Using royalty-free test tracks for fast streaming verification)
+    
     const catalog = [
         { title: "Summer Breeze", artist: "Lo-Fi Beats", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" },
         { title: "Retro Wave", artist: "Synth City", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" },
@@ -92,19 +92,19 @@
         });
     }
 
-    // Feature 1 Execution: Real-time filtering
+    
     function filterTracks() {
         const query = document.getElementById('search').value.toLowerCase();
         const filtered = catalog.filter(t => t.title.toLowerCase().includes(query) || t.artist.toLowerCase().includes(query));
         renderTracks(filtered);
     }
 
-    // Feature 4 Execution: Sub-250ms "Instant" feeling streaming trigger
+    
     function playTrack(track) {
         currentTrackText.innerText = `${track.title} - ${track.artist}`;
         audioPlayer.src = track.url;
         
-        // Performance note: HTML5 audio with preload="auto" ensures near-instant playback execution
+        
         const start = performance.now();
         audioPlayer.play().then(() => {
             const end = performance.now();
@@ -112,7 +112,6 @@
         });
     }
 
-    // Initial load
     renderTracks(catalog);
 </script>
 
