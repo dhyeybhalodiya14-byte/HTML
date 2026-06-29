@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshan University Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+
+        .nav-links {
+            font-size: 24px;
+            color: #00008B;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #00008B;
+            margin-left: 20px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            border-top: 2px solid #ccc;
+        }
+
+        aside {
+            width: 250px;
+            background-color: red;
+            flex-shrink: 0;
+            border-right: 1px dotted #000;
+        }
+
+        aside ul {
+            list-style: none;
+            width: 100%;
+        }
+
+        aside li {
+            border-bottom: 2px solid #FFD700;
+            border-top: 2px solid #FFD700;
+            margin-bottom: 2px;
+            text-align: center;
+        }
+
+        aside a {
+            display: block;
+            padding: 15px 0;
+            text-decoration: none;
+            color: black;
+            font-size: 22px;
+            background-color: red;
+            height: 110px;
+        }
+
+        main {
+            flex-grow: 1;
+            padding: 20px;
+            border: 1px dotted #333;
+            margin: 10px;
+        }
+
+        .profile-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+            margin-bottom: 5px;
+        }
+
+        .card h3 {
+            font-size: 14px;
+            font-weight: normal;
+            margin-bottom: 2px;
+        }
+
+        .card p {
+            font-size: 13px;
+            color: #333;
+        }
+
+        footer {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="https://via.placeholder.com/80x60?text=Logo" alt="Windows Logo"> 
+        </div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <aside>
+            <ul>
+                <li><a href="#">Sidebar</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Placement</a></li>
+                <li><a href="#">Recruitment</a></li>
+                <li><a href="#">Faculty</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="profile-grid">
+                
+                <div class="card">
+                    <img src="https://via.placeholder.com/150x100?text=Image" alt="Arjun Bala">
+                    <h3>Arjun Bala</h3>
+                    <p>BE,MTech(CSE)</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/150x100?text=Image" alt="Firoz Shreyasiya">
+                    <h3>Firoz Shreyasiya</h3>
+                    <p>BE,ME</p>
+                </div>
+                
+                <div style="width: 100%; height: 20px;"></div> 
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/150x100?text=Image" alt="Harsh Kansagara">
+                    <h3>Harsh Kansagara</h3>
+                    <p>L&T PVT LTD</p>
+                    <p>4.5 Lac</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/150x100?text=Image" alt="Shyam Kantesariya">
+                    <h3>Shyam Kantesariya</h3>
+                    <p>Tata Consultancy Service</p>
+                    <p>3.2 Lac</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/150x100?text=Image" alt="Jeet Dhamecha">
+                    <h3>Jeet Dhamecha</h3>
+                    <p>Reliance Industry LTD</p>
+                    <p>5.0 Lac</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/150x100?text=Image" alt="Harsh Maniar">
+                    <h3>Harsh Maniar</h3>
+                    <p>Reliance Industry LTD</p>
+                    <p>5.0 Lac</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://via.placeholder.com/150x100?text=Image" alt="Anand Dabhi">
+                    <h3>Anand Dabhi</h3>
+                    <p>BSNL</p>
+                    <p>5.5 Lac</p>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        &copy;Darshan University-Rajkot
+    </footer>
+
+</body>
+</html>

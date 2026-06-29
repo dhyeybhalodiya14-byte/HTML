@@ -1,0 +1,7 @@
+Internet:-a global computer network providing a variety of information and communication facilities, 
+        consisting of interconnected networks using standardized communication protocols.
+Web:-
+HTTP:-HyperText Transfer Protocol,It starts with http://,It is not secure 
+HTTPS:-HyperText Transfer Protocol Secure,It starts with https://,It is secure
+HTTP requests and responses:-User request to server and server respond to User.
+HTTP response status code:- like 1xx-100,2xx-201,4xx-404,5xx:-505.

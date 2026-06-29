@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        fieldset {
+            width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            border: 2px solid #4CAF50;
+        }
+
+        legend {
+            font-size: 18px;
+            font-weight: bold;
+            color: #4CAF50;
+            padding: 0 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 250px;
+            padding: 6px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: none;
+            height: 60px;
+        }
+
+        input[type="radio"] {
+            width: auto;
+            margin-left: 10px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 120px;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        input[type="reset"] {
+            background-color: #f44336;
+            color: white;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+
+<body>
+
+<fieldset>
+    <legend>Registration Form</legend>
+
+    <h1>Student Registration</h1>
+
+    <form method="get">
+
+        <label for="name">Full Name :</label>
+        <input type="text" id="name" name="fullname" required><br>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="mobile">Mobile :</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" maxlength="10" required><br>
+
+        <label for="address">Address :</label>
+        <textarea id="address" name="address"></textarea><br>
+
+        <label for="nation">Nationality :</label>
+        <input type="text" id="nation" name="nationality"><br>
+
+        <label for="dob">Date of Birth :</label>
+        <input type="date" id="dob" name="dob"><br>
+
+        <label>Gender :</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female<br><br>
+
+        <label for="degree">Highest Degree :</label>
+        <select id="degree" name="degree">
+            <option disabled selected>Select your degree</option>
+            <option>CSE</option>
+            <option>BTech</option>
+            <option>HSC</option>
+        </select><br>
+
+        <label for="cpi">CPI :</label>
+        <input type="text" id="cpi" name="cpi"><br>
+
+        <label for="uni">University :</label>
+        <input type="text" id="uni" name="university"><br>
+
+        <label for="year">Passing Year :</label>
+        <select id="year" name="year">
+            <option disabled selected>Select year</option>
+            <option>2025</option>
+            <option>2024</option>
+            <option>2023</option>
+            <option>2022</option>
+            <option>2021</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Cancel">
+
+    </form>
+</fieldset>
+
+</body>
+</html>

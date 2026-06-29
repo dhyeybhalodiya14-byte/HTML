@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Registration</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            background-color: #f5f5f5;
+        }
+
+        h1, h2 {
+            text-align: center;
+    
+        }
+
+        table {
+            margin: auto;
+            border-spacing: 20px;
+            display: inline;
+        }
+
+        td {
+            font-size: 18px;
+            vertical-align:middle;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 260px;
+            padding: 6px;
+            font-size: 16px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+       
+        hr {
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Employee Registration</h1>
+
+<form>
+<table>
+
+    <!-- Personal Information -->
+    <tr>
+        <td colspan="4" class="center"><h2>Personal Information</h2></td>
+    </tr>
+
+    <tr>
+        <td>Employee Id</td>
+        <td>:</td>
+        <td><input type="text" placeholder="Enter Employee Id"></td>
+
+        <td>Employee Name :</td>
+        <td><input type="text" placeholder="Enter Employee Name"></td>
+    </tr>
+
+    <tr>
+        <td>Email</td>
+        <td>:</td>
+        <td><input type="email" placeholder="Enter Email"></td>
+
+        <td>Contact No :</td>
+        <td><input type="text" placeholder="Enter Contact No"></td>
+    </tr>
+
+    <tr>
+        <td>Marital Status</td>
+        <td>:</td>
+        <td colspan="3">
+            <input type="radio" name="marital"> Single
+            <input type="radio" name="marital"> Married
+        </td>
+    </tr>
+
+    <!-- Education Qualification -->
+    <tr>
+        <td colspan="4" class="center"><h2>Education Qualification</h2></td>
+    </tr>
+
+    <tr>
+        <td>Education</td>
+        <td>:</td>
+        <td><input type="text" placeholder="Enter Education details"></td>
+
+        <td>Experience :</td>
+        <td><input type="text" placeholder="Enter Experience Details"></td>
+    </tr>
+
+    <!-- Job Details -->
+    <tr>
+        <td colspan="4" class="center"><h2>Job Details</h2></td>
+    </tr>
+
+    <tr>
+        <td>Designation</td>
+        <td>:</td>
+        <td><input type="text" placeholder="Enter Designation details"></td>
+
+        <td>Job location :</td>
+        <td><input type="text" placeholder="Enter Job Location"></td>
+    </tr>
+
+    <tr>
+        <td>Salary</td>
+        <td>:</td>
+        <td><input type="text" placeholder="Enter Salary details"></td>
+    </tr>
+
+    <tr>
+        <td colspan="5"><hr></td>
+    </tr>
+
+    <tr>
+        <td colspan="5" class="center">
+            <input type="submit" value="Register" class="btn">
+        </td>
+    </tr>
+
+</table>
+</form>
+
+</body>
+</html>

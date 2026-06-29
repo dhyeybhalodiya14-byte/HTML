@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+<form action="" method="get">
+    <label>Name:</label><br>
+    <input type="text"  required>
+    <br><br>
+
+    
+    <label>Email:</label><br>
+    <input type="email"  required>
+    <br><br>
+
+
+    <label>Age:</label><br>
+    <input type="number" min="18" max="60" required>
+    <br><br>
+    <label>Password:</label><br>
+    <input type="password"
+           name="password"
+           pattern="[A-Za-z0-9]{6,}"
+           {a-Z}
+           title="Minimum 6 characters (letters and numbers)"
+           required>
+    <br><br>
+
+    <input type="submit" value="Register"><br><br><hr>
+    
+    <label>Username:</label><br>
+    <input type="text" name="username" minlength="3" maxlength="15" required>
+    <br><br>
+    
+    
+    <label>Rating (1 to 5):</label><br>
+    <input type="number" name="rating" min="1" max="5" required>
+    <br><br>
+    
+    
+    <label>Feedback:</label><br>
+    <textarea name="feedback"
+    minlength="10"
+    maxlength="100"
+    required></textarea>
+    <br><br>
+    
+    <input type="submit" value="Submit Feedback">
+</form>
+</body>
+
+</html>

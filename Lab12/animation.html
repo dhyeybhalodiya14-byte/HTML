@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            top: 0%;
+            left: 0%;
+            position: absolute;
+            background-color: rebeccapurple;
+            animation-name: change;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            /* animation-direction : reverse; */
+            animation-delay: 1s; 
+            /* border-radius: 50%; */
+        }
+
+        @keyframes change {
+            0%{
+                background-color: rebeccapurple;
+                top: 0%;
+                left: 0%;
+            }
+            25%{
+                top: 0%;
+                left: calc(100% - 300px);
+            }
+            50%{
+                top: calc(100% - 300px);
+                left: calc(100% - 300px);
+            }
+            75%{
+                background-color: red;
+                top: calc(100% - 300px);
+                left: 0%;
+            }
+            100%{
+                background-color: rgb(100, 68, 133);
+                top: 0%;
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

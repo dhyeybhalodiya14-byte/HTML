@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Create Account</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .background {
+      background:rgb(8, 225, 210);
+      padding: 40px;
+      margin-top: 20px;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      height: 70%;
+    }
+
+    .box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      margin-top: 10px;
+      font-weight: 500;
+    }
+
+    .button {
+      background: #20c997;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="out">
+  <div class="background">
+    <div class="box">
+      <h3>Create Account</h3>
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <label>First name *</label>
+          <input class="form-control" placeholder="enter your first name">
+        </div>
+
+        <div class="col-md-6">
+          <label>Last name</label>
+          <input class="form-control" placeholder="enter your last name">
+        </div>
+
+        <div class="col-md-12">
+          <label>Email *</label>
+          <input class="form-control" placeholder="enter your email">
+        </div>
+
+        <div class="col-md-6">
+          <label>Password *</label>
+          <input type="password" class="form-control" placeholder="enter your password">
+        </div>
+
+        <div class="col-md-6">
+          <label>Confirm Password *</label>
+          <input type="password" class="form-control" placeholder="enter again">
+        </div>
+
+        <div class="col-md-6">
+          <label>Gender:</label><br>
+          <input type="radio"> Male
+          <input type="radio"> Female
+        </div>
+
+        <div class="col-md-6">
+          <label>Hobbies</label><br>
+          <input type="checkbox"> Music
+          <input type="checkbox"> Sports
+          <input type="checkbox"> Travel
+          <input type="checkbox"> Movies
+        </div>
+
+        <div class="col-md-6">
+          <label>Source of Income</label>
+          <select class="form-control">
+            <option>Employed</option>
+            <option>Business</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <label>Income</label>
+          <input type="range" class="form-range">
+        </div>
+
+        <div class="col-md-6">
+          <label>Upload Profile Picture</label>
+          <input type="file" class="form-control">
+        </div>
+
+        <div class="col-md-6">
+          <label>Age</label>
+          <input type="number" class="form-control" value="18">
+        </div>
+
+        <div class="col-md-12">
+          <label>Bio</label>
+          <textarea class="form-control"></textarea>
+        </div>
+
+      </div>
+
+      <div class="text-end mt-3">
+        <button class="button btn-create">Create</button>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+</body>
+
+</html>

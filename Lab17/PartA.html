@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Don't Know JS - CSS Edition</title>
+    <style>
+        /* General Layout */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            background-color: #ebeae6;
+            color: #333;
+        }
+
+        /* Nav Bar */
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+
+        .main-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        h1.title {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        .content-flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        /* CSS DRAWN BOOK COVER */
+        .book-container {
+            width: 300px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .oreilly-header {
+            padding: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .author-name {
+            text-align: center;
+            padding: 20px 0 10px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #444;
+        }
+
+        .series-text {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        .yellow-base {
+            background-color: #f7df1e; /* JS Yellow */
+            flex-grow: 1;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+
+        .js-logo-text {
+            font-family: sans-serif;
+            font-weight: 900;
+            font-size: 120px;
+            line-height: 0.8;
+            letter-spacing: -5px;
+        }
+
+        .vertical-text {
+            position: absolute;
+            left: 25px;
+            bottom: 30px;
+            transform: rotate(-90deg);
+            transform-origin: left bottom;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            background: black;
+            color: white;
+            padding: 2px 5px;
+        }
+
+        /* Right Side Text */
+        .promo-text {
+            max-width: 400px;
+            font-size: 1.2rem;
+        }
+
+        .promo-text h2 {
+            font-weight: normal;
+            margin: 20px 0;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: #ff8c00;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        /* Footer */
+        .footer-cta {
+            background-color: #041421;
+            color: white;
+            padding: 50px 20px;
+            margin-top: 50px;
+        }
+
+        .btn-large {
+            padding: 12px 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">The book series</a>
+        <a href="#">Testimonials</a>
+        <a href="#">The Author</a>
+        <a href="#">Free resources</a>
+    </nav>
+
+    <div class="main-container">
+        <h1 class="title">You dont know JavaScript</h1>
+
+        <div class="content-flex">
+            <div class="book-container">
+                <div class="oreilly-header">O'REILLY<sup>®</sup></div>
+                <div class="author-name">KYLE SIMPSON</div>
+                <div class="series-text">COMPLETE<br>SERIES</div>
+                <div class="yellow-base">
+                    <div class="vertical-text">You Don't Know</div>
+                    <div class="js-logo-text">JS</div>
+                </div>
+            </div>
+
+            <div class="promo-text">
+                <p>Don't just drift through Javascript.</p>
+                <h2>Understand how Javascript works</h2>
+                <p>Start your journey through the bumpy side of Javascript</p>
+                <a href="#" class="btn">ORDER YOUR COPY NOW</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-cta">
+        <p>The first ebook in the book series is absolutely free.</p>
+        <a href="#" class="btn btn-large">FIND OUT MORE ABOUT THIS OFFER</a>
+    </div>
+
+</body>
+</html>
